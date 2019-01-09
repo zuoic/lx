@@ -6,6 +6,7 @@ import App from './App'
 
 
 import 'mint-ui/lib/style.css'
+import './lib/mui/css/mui.min.css'
 
 Vue.component(Header.name, Header)
 
