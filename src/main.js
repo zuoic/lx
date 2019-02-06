@@ -9,8 +9,13 @@ import App from './App'
 
 //导入路由的包
 import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
+
+
 //安装路由
 Vue.use(VueRouter)
+Vue.use(VueResource)
+
 
 
 import 'mint-ui/lib/style.css'

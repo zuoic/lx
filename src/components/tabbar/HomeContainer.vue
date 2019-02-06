@@ -11,7 +11,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return {}
+  },
+  created(){
+    this.getLunbotu()
+  },
+  methods: {
+    getLunbotu(){
+      //获取轮播图数据的方法
+      this.$http.get("http://vue.studyit.io/api/getlunbo").then(result => {
+        console.log(result.body)
+      })
+    }
+  }
+}
 </script>
 
 <style lang="less" scoped>
